@@ -17,12 +17,14 @@ const Home: NextPage = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type='email' value={email} onChange={e => setEmail(e.target.value)}  />
-      <input type='password' value={password} onChange={e => setPassword(e.target.value)}  />
+    <div className="container">
+      <form onSubmit={handleSubmit} className='content'>
+        <input type='email' value={email} onChange={e => setEmail(e.target.value)}  />
+        <input type='password' value={password} onChange={e => setPassword(e.target.value)}  />
 
-      <button type='submit'>Entrar</button>
-    </form>
+        <button type='submit'>Entrar</button>
+      </form>
+    </div>
   )
 }
 
