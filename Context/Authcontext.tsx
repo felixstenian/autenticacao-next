@@ -6,7 +6,7 @@ import {
   destroyCookie // Remove os dados dos cookies
 } from 'nookies'
 
-import { api } from "../services/api";
+import { api } from "../services/apiClient";
 
 type User = {
   email: string;
